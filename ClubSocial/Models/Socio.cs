@@ -16,6 +16,9 @@ namespace ClubSocial.Models
         public bool IsActivo { get; set; }
         public string TelefonoUrgencias { get; set; }
         public string UrlFotoPerfil { get; set; }
+        public int IdTipoSocio { get; set; }
+        public string DNI { get; set; }
+        public TipoSocio TipoSocio { get; set; }
 
         //Creo una clase de mapeo, en el constructor incluyo un EntityTypeBuilder, tengo que importar el namespace
         //using Microsoft.EntityFrameworkCore.Metadata.Builders;
