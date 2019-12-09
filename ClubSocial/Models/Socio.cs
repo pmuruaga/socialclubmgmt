@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace ClubSocial.Models
         public bool IsActivo { get; set; }
         public string TelefonoUrgencias { get; set; }
         public string UrlFotoPerfil { get; set; }
-        public int IdTipoSocio { get; set; }
+        public int TipoSocioId { get; set; }
         public string DNI { get; set; }
         public TipoSocio TipoSocio { get; set; }
 
@@ -30,7 +31,7 @@ namespace ClubSocial.Models
                 mapeoSocio.HasKey(x => x.Id);
                 //Si las columnas se llaman igual en la clase que en la bd no hace falta lo siguiente.
                 //El HasColumnName debo importarlo en el using Microsoft.EntityFrameworkCore
-                //mapeoAutor.Property(x => x.Nombre).HasColumnName("Nombre");
+                mapeoSocio.Property(x => x.TipoSocioId).HasColumnName("IdTipoSocio");
 
                 //Si la tabla tiene un nombre diferente al de la clase que estoy definiendo como entidad
                 //Debo especificarla de la siguiente forma, si se llaman igual no hace falta.

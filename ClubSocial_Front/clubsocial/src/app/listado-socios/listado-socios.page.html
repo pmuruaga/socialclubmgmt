@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Listado de Socios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Searchbar with a placeholder -->
+<ion-searchbar placeholder="Ingrese DNI a Buscar" (ionChange)="buscarSocio( $event.detail.value )"></ion-searchbar>
+
+
+<!-- List of Text Items -->
+<ion-list>
+  <ion-item *ngFor="let socio of socios; let indice = index" class="item-label item ios in-list ion-focusable hydrated">
+    <ion-avatar slot="start" class="ios hydrated">
+      <img src="{{socio.urlFotoPerfil}}">
+    </ion-avatar>
+    <ion-label class="sc-ion-label-ios-h sc-ion-label-ios-s ios hydrated" (click)="irADetalleSocio(socio)">
+      <h2>{{socio.apellido}}, {{socio.nombre}}</h2>
+      <h3>{{socio.tipoSocio.descripcion}}</h3>
+      <p>{{socio.isActivo}}</p>       
+      <ion-button color="primary" size="small" fill="outline" (click)="editar(socio)">Ver Detalles</ion-button>
+      <ion-button color="danger" size="small" fill="outline" (click)="eliminarSocio(socio.id, indice)">Editar</ion-button>
+    </ion-label>    
+  </ion-item>
+</ion-list>
+
+</ion-content>

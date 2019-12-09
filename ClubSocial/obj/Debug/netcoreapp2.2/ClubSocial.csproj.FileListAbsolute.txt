@@ -1,0 +1,14 @@
+C:\Users\pmuru\source\repos\ClubSocial\ClubSocial\bin\Debug\netcoreapp2.2\ClubSocial.deps.json
+C:\Users\pmuru\source\repos\ClubSocial\ClubSocial\bin\Debug\netcoreapp2.2\ClubSocial.runtimeconfig.json
+C:\Users\pmuru\source\repos\ClubSocial\ClubSocial\bin\Debug\netcoreapp2.2\ClubSocial.runtimeconfig.dev.json
+C:\Users\pmuru\source\repos\ClubSocial\ClubSocial\bin\Debug\netcoreapp2.2\ClubSocial.dll
+C:\Users\pmuru\source\repos\ClubSocial\ClubSocial\obj\Debug\netcoreapp2.2\ClubSocial.csprojAssemblyReference.cache
+C:\Users\pmuru\source\repos\ClubSocial\ClubSocial\obj\Debug\netcoreapp2.2\ClubSocial.csproj.CoreCompileInputs.cache
+C:\Users\pmuru\source\repos\ClubSocial\ClubSocial\obj\Debug\netcoreapp2.2\ClubSocial.RazorAssemblyInfo.cache
+C:\Users\pmuru\source\repos\ClubSocial\ClubSocial\obj\Debug\netcoreapp2.2\ClubSocial.RazorAssemblyInfo.cs
+C:\Users\pmuru\source\repos\ClubSocial\ClubSocial\obj\Debug\netcoreapp2.2\ClubSocial.AssemblyInfoInputs.cache
+C:\Users\pmuru\source\repos\ClubSocial\ClubSocial\obj\Debug\netcoreapp2.2\ClubSocial.AssemblyInfo.cs
+C:\Users\pmuru\source\repos\ClubSocial\ClubSocial\obj\Debug\netcoreapp2.2\ClubSocial.RazorTargetAssemblyInfo.cache
+C:\Users\pmuru\source\repos\ClubSocial\ClubSocial\bin\Debug\netcoreapp2.2\ClubSocial.pdb
+C:\Users\pmuru\source\repos\ClubSocial\ClubSocial\obj\Debug\netcoreapp2.2\ClubSocial.dll
+C:\Users\pmuru\source\repos\ClubSocial\ClubSocial\obj\Debug\netcoreapp2.2\ClubSocial.pdb

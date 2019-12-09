@@ -24,7 +24,8 @@ namespace ClubSocial.Services
 
         public List<Socio> Buscar(string DNI)
         {
-            var resultado = _clubDbContext.Socio.Where(x => x.DNI == DNI).Include(x => x.TipoSocio).ToList();
+            //Busco que contenga el dni, es para usar en un buscador dinamico, cuando el usuario ingrese algunos numeros vaya filtrando.
+            var resultado = _clubDbContext.Socio.Where(x => x.DNI.Contains(DNI)).Include(x => x.TipoSocio).ToList();
             return resultado;
         }
 
@@ -54,7 +55,7 @@ namespace ClubSocial.Services
                 socioEnDB.Apellido = _socio.Apellido;
                 socioEnDB.DNI = _socio.DNI;
                 socioEnDB.FechaNacimiento = _socio.FechaNacimiento;
-                socioEnDB.IdTipoSocio = _socio.IdTipoSocio;
+                socioEnDB.TipoSocioId = _socio.TipoSocioId;
                 socioEnDB.IsActivo = _socio.IsActivo;
                 socioEnDB.Telefono = _socio.Telefono;
                 socioEnDB.TelefonoUrgencias = _socio.TelefonoUrgencias;
